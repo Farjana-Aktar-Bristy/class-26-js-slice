@@ -6,33 +6,38 @@ const products = [
     "Canon M50"
 ]
 
-// const searchedWord = "Oneplus";
+var searchedWord = "Oneplus";
 
-const output = [];
+var output = [];
 
-// for(const product of products){
-//     if(product.toLowerCase().indexOf(searchedWord.toLowerCase()) != -1 ){
-//         output.push(product);
-//     }
-// }
+for (const product of products) {
+    if (product.toLowerCase().indexOf(searchedWord.toLowerCase()) != -1) {
+        output.push(product);
+    }
+}
+console.log(output);
 
-// const searchedWord = "S21";
-// for(const product of products){
-//     if(product.toLowerCase().includes(searchedWord.toLowerCase())){
-//         output.push(product);
-//     }
-// }
+searchedWord = "S21";
+for (const product of products) {
+    if (product.toLowerCase().includes(searchedWord.toLowerCase())) {
+        output.push(product);
+    }
+}
+console.log(output);
 
-// const searchedWord = "canon";
-// for(const product of products){
-//     if(product.toLowerCase().startsWith(searchedWord.toLowerCase())){
-//         output.push(product);
-//     }
-// }
 
-const searchedWord = "RAM"
-for(const product of products){
-    if(product.toLowerCase().endsWith(searchedWord.toLowerCase())){
+searchedWord = "canon";
+for (const product of products) {
+    if (product.toLowerCase().startsWith(searchedWord.toLowerCase())) {
+        output.push(product);
+    }
+}
+console.log(output);
+
+
+searchedWord = "RAM"
+for (const product of products) {
+    if (product.toLowerCase().endsWith(searchedWord.toLowerCase())) {
         output.push(product);
     }
 }
